@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fajal Kasmani's - Portfolio</title>
+    <link rel="stylesheet" href="myportfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./Assets/logo2.png" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <!-- <p>Front-End Developer</p> -->
+                 <p>Code - Create - Inspire</p>
+                <h1>Hi, I'm 
+                    <span>Fajal Kasmani </span><br>
+                    
+                </h1>     
+                <p style="margin-top: 15px;">I am a Front-End Developer</p>     
+                
+            </div>
+        </div>
+    </div>
+    <!-- about -->
+     <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="./Assets/fzu.jpg" alt="user">
+                </div>
+
+                <div class="about-col2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque sunt similique repellendus expedita consequatur, rerum totam, laboriosam eum neque, consequuntur asperiores laudantium id maxime? Nam illum nulla earum amet nobis!</p>
+                   
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('exprience')">Exprience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front - End :</span><br>HTML,CSS,JavaScript</li>
+                            <li><span>Framework :</span><br>Bootstrap</li>
+                            <li><span>DataBase :</span><br>MySql</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="exprience">
+                        <ul>
+                            <li><span>2020 - Current </span><br>Google Web/App Interfaces</li>
+                            <li><span>2019 - 2020</span><br>Microsoft Web/App Interfaces</li>
+                            <li><span>2016 - 2019</span><br>TCS Web/App Interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2025</span><br>Computer Sciece</li>
+                            <li><span>2022</span><br>12th</li>
+                            <li><span>2020</span><br>10th</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <!-- ------------- services ----------->
+      <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam magnam nobis, minus nesciunt, eligendi, placeat blanditiis reprehenderit dignissimos deleniti voluptatem aperiam praesentium optio veritatis soluta distinctio commodi quae iste quaerat?</p>
+                    <a href="#">Learn More..</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam magnam nobis, minus nesciunt, eligendi, placeat blanditiis reprehenderit dignissimos deleniti voluptatem aperiam praesentium optio veritatis soluta distinctio commodi quae iste quaerat?</p>
+                    <a href="#">Learn More..</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Development</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam magnam nobis, minus nesciunt, eligendi, placeat blanditiis reprehenderit dignissimos deleniti voluptatem aperiam praesentium optio veritatis soluta distinctio commodi quae iste quaerat?</p>
+                    <a href="#">Learn More..</a>
+                </div>
+
+            </div>
+        </div>
+      </div>
+
+      <!-- portfolio -->
+       <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="./Assets/work-1.png" alt="work-1">
+                        <div class="layer">
+                            <h3>Social Media App</h3>
+                            <p>The app content you to the telented people was adsked to me how thats can perform batterly</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+
+                    </div>
+                    <div class="work">
+                        <img src="./Assets/work-2.png" alt="work-1">
+                        <div class="layer">
+                            <h3>Music App</h3>
+                            <p>The app content you to the telented people was adsked to me how thats can perform batterly</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="./Assets/work-3.png" alt="work-1">
+                        <div class="layer">
+                            <h3>Game</h3>
+                            <p>The app content you to the telented people was adsked to me how thats can perform batterly</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" class="see-more-btn">See More..</a>
+
+            </div>
+       </div>
+
+       <!-- contact -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p> <i class="fa-solid fa-envelope"></i>Contact@gmail.com</p>
+                        <p> <i class="fa-solid fa-square-phone"></i>0123456789</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <a href="./Assets/my-cv.pdf" class="btn-resume see-more-btn">Resume</a>
+                    </div>
+
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn2 btn-resume see-more-btn">Submit</button>
+                        </form>
+                        <!-- <span id="msg">Your Form Request Will Be Submited..</span> -->
+                    </div>                 
+
+                </div>
+
+            </div>
+            <div class="copyright">
+                <p> Copyright © Fajal Kasmani <i>&hearts;</i> All rights reserved</p>
+            </div>
+        </div>
+
+<script src="myportfolio.js"></script>
+</body>
+</html>
