@@ -16,20 +16,26 @@ body {
 
 #header .container {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
 }
 
-#header {
-    background-image: url('./Assets/fzzzzzzzz.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: 43%;
-    margin-top: 25px;
+/* #header {    
+    width: 100%;
+    display: inline-block;
+} */
+
+div.header-text {
+    margin-top: 100px;
+    
+}
+
+div.header-text h1 {
+    font-size: 60px;
 }
 
 .container {
     padding: 0 10%;
+    
 }
 
 nav {
@@ -77,12 +83,13 @@ nav ul li a:hover::after {
 
 .header-text {
     margin-top: 20%;
-    font-size: 30px;
+    font-size: 50px;
+    margin-left: 50px;
     transition: all 2s ease-in;
 }
 
 .header-text h1 {
-    font-size: 60px;
+    font-size: 80px;
     margin-top: 20px;
 }
 
@@ -233,6 +240,7 @@ nav ul li a:hover::after {
 
 .work img {
     width: 100%;
+    border: 2px solid wheat;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
@@ -382,63 +390,48 @@ form .btn2 {
     color: #ff004f;
 }
 
+
+
 /* Media Queries */
-nav .fas {
+ nav .fas {
     display: none;
 }
 
-@media only screen and (max-width: 330px){
-    #header {
-        background-image: url("./Assets/work-3.png");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: right;
+@media only screen and (max-width: 480px) and (min-width: 320px){
+    #header {    
         width: 100%;
-        height: 100%;
+        display: inline-block;
+    }
+  
+    div.header-text {
+        margin-top: 10px;
     }
 
-    .header-text {
-        margin-top: 70%;
-        font-size: 10px;
-        transition: all 1s ease-in-out;
+    div.header-text h1 {
+        font-size: 40px;
     }
 
-    .header-text h1 {
-        font-size: 20px;
-    }
-
-}
-
-@media only screen and (min-width: 500px) and (max-width: 767px){
-    .header-text {
-        margin-top: 60%;
-        font-size: 18px;
-        transition: all 2s ease-in-out;
-    }
-
-    .header-text h1 {
-        font-size: 32px;
-    }
 }
 
 @media only screen and (max-width: 768px) {
-    #header {
-        background-image: url("./Assets/fzres.jpg");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: right;
+    
+    #header {    
         width: 100%;
-        height: 100%;
+        display: inline-block;
     }
-
-    .header-text {
-        margin-top: 60%;
+  
+    div.header-text {
+        margin-top: 10px;
         font-size: 18px;
-        transition: all 2.5s ease-in-out;
+        transition: all 1.5s ease-in-out;
     }
 
-    .header-text h1 {
-        font-size: 32px;
+    div.header-text h1 {
+        font-size: 40px;
+    }
+    
+    #header .container {
+        height: 50vh;
     }
 
     nav .fas {
@@ -504,9 +497,23 @@ nav .fas {
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    
+    #header {    
+        width: 100%;
+        display: inline-block;
+    }
+  
+    div.header-text {
+        margin-top: 20px;
+    }
+
+    div.header-text h1 {
+        font-size: 50px;
+    }   
+    
     .header-text {
-        margin-top: 25%;
-        font-size: 28px;
+        margin-top: 60%;
+        font-size: 40px;
     }
 
     .header-text h1 {
