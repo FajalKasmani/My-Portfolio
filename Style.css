@@ -1,4 +1,4 @@
-* {
+*{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
@@ -19,14 +19,8 @@ body {
     height: 90vh;
 }
 
-/* #header {    
-    width: 100%;
-    display: inline-block;
-} */
-
 div.header-text {
     margin-top: 100px;
-    
 }
 
 div.header-text h1 {
@@ -35,7 +29,6 @@ div.header-text h1 {
 
 .container {
     padding: 0 10%;
-    
 }
 
 nav {
@@ -344,17 +337,6 @@ nav ul li a:hover::after {
     transform: translateY(-5px);
 }
 
-.btn-resume {
-    display: inline-block;
-    background-color: #ff004f;
-    padding: 14px 50px;
-    border-radius: 6px;
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    margin-top: 20px;
-}
-
 .contact-left form {
     width: 100%;
 }
@@ -393,16 +375,192 @@ form .btn2 {
 
 
 /* Media Queries */
+.nav .fas{
+    display: none;
+    font-size: 25px;
+    color: #fff;
+    transition: transform 0.5s;
+    transform: translateX(-100%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    transition: opacity 0.5s;
+    opacity: 0;
+    z-index: 2;
+    opacity: 1;
+}
+
+@media only screen and (max-width: 768px) {
+    #header {
+        width: 100%;
+        display: inline-block;
+    }
+    div.header-text {
+        margin-top: 10px;
+    }
+    div.header-text h1 {
+        font-size: 40px;
+    }
+    #header .container {
+        height: 50vh;
+    }
+
+    nav ul {
+        display: none;
+    }
+    #header.nav-toggle {
+        display: block;
+    }
+    nav.nav-toggle i {
+        transform: translateX(0);
+    }
+    nav ul li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+    nav.nav-toggle.fas {
+        transform: translateX(100%);
+    }
+    nav.nav-toggle.fas {
+        transform: translateX(0);
+    }
+    nav ul li a:hover {
+        color: #ff004f;
+    }
+    .contact-left {
+        flex-basis: 100%;
+    }
+    .contact-right {
+        flex-basis: 100%;
+    }
+    .social-icons {
+        margin-top: 0;
+    }
+    .contact-left form {
+        width: 100%;
+    }
+
+    form input, form textarea {
+        width: 100%;
+    }
+    form.btn2 {
+        padding: 14px 60px;
+    }
+    .copyright {
+        width: 100%;
+        text-align: center;
+        padding: 25px 0;
+    }
+
+
+    i {
+        color: #ff004f;
+    }
+}
+
+/* Media Queries for mobile */
+
+#header {
+    width: 100%;
+    display: inline-block;
+}
+
+div.header-text {
+    margin-top: 10px;
+}
+
+div.header-text h1 {
+    font-size: 40px;
+}
+
+#header.container {
+    height: 50vh;
+}
+
+nav ul {
+    display: none;
+}
+
+#header.nav-toggle {
+    display: block;
+}
+
+nav.nav-toggle i {
+    transform: translateX(0);
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav.nav-toggle.fas {
+    transform: translateX(100%);
+}
+
+nav.nav-toggle.fas {
+    transform: translateX(0);
+}
+
+nav ul li a:hover {
+    color: #ff004f;
+}
+
+.contact-left {
+    flex-basis: 100%;
+}
+
+.contact-right {
+    flex-basis: 100%;
+}
+
+.social-icons {
+    margin-top: 0;
+}
+
+.contact-left form {
+    width: 100%;
+}
+
+form input, form textarea {z
+    width: 100%;
+}
+
+form.btn2 {
+    padding: 14px 60px;
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+}
+
+i {
+    color: #ff004f;
+}
+
  nav .fas {
     display: none;
 }
 
 @media only screen and (max-width: 480px) and (min-width: 320px){
-    #header {    
+    #header {
         width: 100%;
         display: inline-block;
     }
-  
+
     div.header-text {
         margin-top: 10px;
     }
@@ -415,15 +573,9 @@ form .btn2 {
 
 @media only screen and (max-width: 768px) {
     
-    #header {    
+    #header {
         width: 100%;
         display: inline-block;
-    }
-  
-    div.header-text {
-        margin-top: 10px;
-        font-size: 18px;
-        transition: all 1.5s ease-in-out;
     }
 
     div.header-text h1 {
@@ -498,18 +650,18 @@ form .btn2 {
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
     
-    #header {    
+    #header {
         width: 100%;
         display: inline-block;
     }
-  
+
     div.header-text {
         margin-top: 20px;
     }
 
     div.header-text h1 {
         font-size: 50px;
-    }   
+    }
     
     .header-text {
         margin-top: 60%;
