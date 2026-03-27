@@ -46,8 +46,8 @@ body {
 }
 
 section {
-    min-height: 100vh;
-    padding: 1rem;
+    min-height: auto;
+    padding: 2rem 1rem;
 }
 
 /* End Global CSS For Whole Page*/
@@ -161,7 +161,8 @@ header .navbar ul li a:hover {
     display: flex;
     justify-content: center;
     flex-flow: column;
-    padding: 0 15rem;
+    padding: 10rem 15rem 5rem 15rem;
+    min-height: 60rem;
 }
 
 .home h3 {
@@ -426,7 +427,8 @@ header .navbar ul li a:hover {
     }
 
     .home {
-        padding: 1rem 4rem;
+        padding: 5rem 4rem;
+        min-height: 50rem;
     }
 
 }
