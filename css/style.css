@@ -431,7 +431,7 @@ header .navbar ul li a:hover {
 
 }
 
-@media (max-width:991px) {
+@media (max-width:890px) {
 
     header {
         left: -120%;
@@ -601,7 +601,7 @@ header .user img {
     padding: 0;
 }
 
-@media (max-width:991px) {
+@media (max-width:890px) {
     body {
         padding: 7rem 0 0 0 !important;
     }
@@ -867,7 +867,7 @@ header .user img {
     transform: translateY(-5px);
 }
 
-@media (max-width:991px) {
+@media (max-width:890px) {
 
     .about-col1,
     .about-col2,
