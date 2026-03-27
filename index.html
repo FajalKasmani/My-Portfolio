@@ -5,171 +5,286 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fajal Kasmani's - Portfolio</title>
-    <link rel="stylesheet" href="Style.css">
-    <link rel="icon" href="./Assets/favicon.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Google Fonts Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" href="images/favicon.ico">
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src="./Assets/logo2.png" alt="logo" class="logo">
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fas fa-times" onclick="closemenu()"></i>
-                </ul>
-                <i class="fas fa-bars" onclick="openmenu()"></i>
-            </nav>
 
-            <div class="main-bg-img">
-
-            </div>
-
-            <div class="header-text">
-
-                <p>Code - Create - Inspire</p>
-                <h1>Heyy, My Self -
-                    <span>Fajal Kasmani </span><br>
-
-                </h1>
-                <p style="margin-top: 15px;">(BCA Graduate)</p>
-
-            </div>
+    <!-- header section starts  -->
+    <header>
+        <div class="user">
+            <img src="images/photo.jpeg" alt="Fajal Kasmani">
+            <h3 class="name">Fajal Kasmani</h3>
+            <!-- <h2 class="nickname">MCA'27</h2> -->
+            <!-- <p class="post">Web Developer</p> -->
         </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- header section ends -->
+
+    <!-- mobile top bar starts -->
+    <div class="mobile-top-bar">
+        <div class="mobile-user">
+            <img src="images/photo.jpeg" alt="Fajal Kasmani">
+            <h3 class="name">Fajal Kasmani</h3>
+        </div>
+        <div id="menu" class="fas fa-bars"></div>
     </div>
-    <!-- about -->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col1">
-                    <img src="./Assets/photo.jpeg" alt="user">
+    <!-- mobile top bar ends -->
+
+    <!-- home section starts  -->
+    <section class="home" id="home">
+        <p style="font-size: 2.2rem; color: #ccc;">Code - Create - Optimize</p>
+        <h1 style="font-size: 6.5rem; margin: 1rem 0;">
+            Hii, i'm - <br><span style="color: var(--springGreen);">Fajal
+                Kasmani</span>
+        </h1>
+        <p class="typing-container" style="font-size: 3rem; color:#fff; margin:1.5rem 0;">I'm a <span class="typing"
+                style="color: var(--springGreen); font-weight:600;"></span></p>
+        <p style="margin-top: 15px; font-size: 1.8rem; color: #eee; max-width: 60rem; line-height: 1.8;">A passionate
+            software engineer currently pursuing MCA, focused on building interactive, scalable, and premium web
+            applications.</p>
+
+        <div class="home-buttons" style="display: flex; gap: 2rem; margin-top: 3rem;">
+            <a href="#about"><button class="btn" style="border-radius: 5rem;">Discover More <i
+                        class="fas fa-arrow-down"></i></button></a>
+            <a href="#portfolio"><button class="btn"
+                    style="background: transparent; color: var(--springGreen); border: .2rem solid var(--springGreen); border-radius: 5rem;">My
+                    Projects <i class="fas fa-laptop-code"></i></button></a>
+        </div>
+    </section>
+    <!-- home section ends  -->
+
+    <!-- about section starts  -->
+    <section class="about" id="about" style="padding: 5rem 0;">
+        <h1 class="heading"> <span>About</span> me & <span>Education</span> </h1>
+        <div class="row" style="display: flex; gap: 4rem; padding: 0 5%; flex-wrap: wrap;">
+            <!-- LEFT: About Me -->
+            <div class="about-info" style="flex: 1 1 40rem;">
+                <h3 style="font-size: 3rem; color: var(--springGreen); margin-bottom: 2rem;">Fajal Kasmani</h3>
+                <p style="font-size: 1.6rem; color: #eee; line-height: 1.8; margin-bottom: 2rem;">
+                    Hello! I'm <strong>Fajal Kasmani</strong>, a highly driven software engineer currently
+                    <strong>pursuing my MCA</strong> with a profound passion for modern software development. My
+                    technical journey is defined by a deep curiosity for building scalable, interactive, and
+                    user-centric web applications from the ground up.<br><br>
+                    Specializing in both <strong>Front-End aesthetics and Back-End architectures</strong>, I leverage
+                    technologies like HTML, CSS, JavaScript, PHP, and MySQL to bring complex ideas to life. Recently, I
+                    successfully engineered a full-stack service booking platform, handling everything from UI/UX design
+                    to complex database routing and user authentication.<br><br>
+                    Beyond writing clean and efficient code, I am obsessed with continuously learning cutting-edge
+                    frameworks, solving challenging problems, and translating raw concepts into dynamic digital
+                    experiences. My ultimate goal is to craft digital products that leave a lasting impact!
+                </p>
+                <div style="font-size: 1.6rem; color: #ccc;">
+                    <p style="margin-bottom: 1rem;"><span
+                            style="color: var(--springGreen); font-weight: 600;">Qualification :</span> MCA (Pursuing),
+                        BCA Graduate</p>
+                    <p style="margin-bottom: 1rem;"><span style="color: var(--springGreen); font-weight: 600;">Role
+                            :</span> Full Stack Web Developer</p>
+                    <p style="margin-bottom: 1rem;"><span style="color: var(--springGreen); font-weight: 600;">Language
+                            :</span> Gujarati, Hindi, English</p>
+                    <p style="margin-bottom: 1rem;"><span style="color: var(--springGreen); font-weight: 600;">Email
+                            :</span> fajalmemon393@gmail.com</p>
                 </div>
+                <a href="images/my-cv.pdf" target="_blank"><button class="btn" style="margin-top: 2rem;"><i
+                            class="fas fa-download"></i> Download Resume </button></a>
+            </div>
 
-                <div class="about-col2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>
-                        My Self - Fajal Kasmani, I am a BCA graduate passionate about web development and programming. I
-                        have hands-on experience in creating dynamic and responsive web applications using HTML, CSS,
-                        JavaScript, PHP, and MySQL. I recently completed a full-stack project as part of my final year,
-                        where I built a service booking platform with features like user authentication, request
-                        tracking, and an admin panel. I enjoy learning new technologies and continuously improving my
-                        coding skills to build better and user-friendly applications.
-                    </p>
-
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab(event, 'Skills-2')">Skills-I</p>
-                        <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+            <!-- RIGHT: Education Timeline -->
+            <div class="education-timeline" style="flex: 1 1 40rem;">
+                <div class="box-container"
+                    style="padding-left: 2rem; border-left: .2rem solid var(--springGreen); margin-top:2rem;">
+                    <div class="box" style="position: relative; margin-bottom: 3rem; padding-left: 3rem;">
+                        <i class="fas fa-university"
+                            style="position: absolute; top: 0; left: -4.6rem; height: 5rem; width: 5rem; border-radius: 50%; background: var(--springGreen); color: #fff; line-height: 5rem; text-align: center; font-size: 2rem; box-shadow: 0 0 10px var(--springGreen);"></i>
+                        <span
+                            style="font-size: 1.3rem; background: #222; color: var(--springGreen); border-radius: 5rem; padding: .5rem 1.5rem; font-weight: bold;">Present</span>
+                        <h3 style="font-size: 2rem; color: #fff; padding-top: 1.5rem;">MCA (Pursuing)</h3>
+                        <p style="font-size: 1.4rem; color: #eee; padding-top: 1rem;">Currently advancing my higher
+                            education in Master of Computer Applications.</p>
                     </div>
-
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Front-End :</span><br>HTML, CSS, JavaScript, Bootstrap</li>
-                            <li><span>Back-End :</span><br>PHP (Core), ASP.NET, VB.NET</li>
-                            <li><span>Database :</span><br>MySQL, Oracle (SQL/PLSQL)</li>
-                        </ul>
+                    <div class="box" style="position: relative; margin-bottom: 3rem; padding-left: 3rem;">
+                        <i class="fas fa-graduation-cap"
+                            style="position: absolute; top: 0; left: -4.6rem; height: 5rem; width: 5rem; border-radius: 50%; background: var(--springGreen); color: #fff; line-height: 5rem; text-align: center; font-size: 2rem; box-shadow: 0 0 10px var(--springGreen);"></i>
+                        <span
+                            style="font-size: 1.3rem; background: #222; color: var(--springGreen); border-radius: 5rem; padding: .5rem 1.5rem; font-weight: bold;">2025</span>
+                        <h3 style="font-size: 2rem; color: #fff; padding-top: 1.5rem;">BCA Graduate (First Class)</h3>
+                        <p style="font-size: 1.4rem; color: #eee; padding-top: 1rem;">Completed full-stack service
+                            platform as final year project.</p>
                     </div>
-
-                    <div class="tab-contents" id="Skills-2">
-                        <ul>
-                            <li><span>Programming :</span><br>C, C++, Java (Core), Advanced C</li>
-                            <li><span>Tools & IDE :</span><br>XAMPP, PhpMyAdmin, Visual Studio, VS Code, SublimeText,
-                                Git & Github</li>
-                            <li><span>Other :</span><br>Responsive Design, UI/UX Basics, Problem Solving, Session
-                                Handling, Form Validation,</li>
-                        </ul>
+                    <div class="box" style="position: relative; margin-bottom: 3rem; padding-left: 3rem;">
+                        <i class="fas fa-school"
+                            style="position: absolute; top: 0; left: -4.6rem; height: 5rem; width: 5rem; border-radius: 50%; background: var(--springGreen); color: #fff; line-height: 5rem; text-align: center; font-size: 2rem; box-shadow: 0 0 10px var(--springGreen);"></i>
+                        <span
+                            style="font-size: 1.3rem; background: #222; color: var(--springGreen); border-radius: 5rem; padding: .5rem 1.5rem; font-weight: bold;">2022</span>
+                        <h3 style="font-size: 2rem; color: #fff; padding-top: 1.5rem;">12th Grade</h3>
+                        <p style="font-size: 1.4rem; color: #eee; padding-top: 1rem;">Completed 12th grade education
+                            with ~56%tile.</p>
                     </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2025</span><br>BCA Graduate(First Class)</li>
-                            <li><span>2022</span><br>12th (~56%tile)</li>
-                            <li><span>2020</span><br>10th (~65%tile)</li>
-                        </ul>
+                    <div class="box" style="position: relative; margin-bottom: 3rem; padding-left: 3rem;">
+                        <i class="fas fa-school"
+                            style="position: absolute; top: 0; left: -4.6rem; height: 5rem; width: 5rem; border-radius: 50%; background: var(--springGreen); color: #fff; line-height: 5rem; text-align: center; font-size: 2rem; box-shadow: 0 0 10px var(--springGreen);"></i>
+                        <span
+                            style="font-size: 1.3rem; background: #222; color: var(--springGreen); border-radius: 5rem; padding: .5rem 1.5rem; font-weight: bold;">2020</span>
+                        <h3 style="font-size: 2rem; color: #fff; padding-top: 1.5rem;">10th Grade</h3>
+                        <p style="font-size: 1.4rem; color: #eee; padding-top: 1rem;">Completed 10th grade education
+                            with ~65%tile.</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+    <!-- about section ends -->
 
-    <!-- portfolio -->
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="./Assets/work-1.png" alt="work-1">
-                    <div class="layer">
-                        <h3>Personal Portfolio Website</h3>
-                        <p>Personal Portfolio Website using HTML, CSS, JavaScript.</p>
-                        <a href="https://fajalkasmani.in/" target="_blank"><i
-                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
+    <!-- skills section starts -->
+    <section class="skills" id="skills" style="padding: 5rem 0;">
+        <h1 class="heading"> My <span>skills</span> </h1>
+        <p style="text-align: center; color: #ccc; font-size: 1.6rem; margin-bottom: 3rem;">Technologies and tools I
+            specialize in.</p>
+        <div class="box-container"
+            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2.5rem; padding: 0 5%;">
 
+            <div class="box skills-box"
+                style="background: #222; border-radius: 1rem; padding: 3rem; text-align: center; border: .2rem solid #222; transition: .2s linear;">
+                <i class="fas fa-file-code"
+                    style="height: 6rem; width: 6rem; line-height: 6rem; font-size: 2.5rem; color: #fff; background: var(--springGreen); border-radius: 50%; margin-bottom: 1.5rem; box-shadow: 0 0 10px var(--springGreen);"></i>
+                <h3 style="font-size: 2.5rem; color: #fff; margin-bottom: 1rem;">Front-End</h3>
+                <p style="font-size: 1.6rem; color: #eee; line-height: 1.8;">HTML5, CSS3, JavaScript, Bootstrap.
+                    Responsive UI/UX Design.</p>
+            </div>
+
+            <div class="box skills-box"
+                style="background: #222; border-radius: 1rem; padding: 3rem; text-align: center; border: .2rem solid #222; transition: .2s linear;">
+                <i class="fas fa-server"
+                    style="height: 6rem; width: 6rem; line-height: 6rem; font-size: 2.5rem; color: #fff; background: var(--springGreen); border-radius: 50%; margin-bottom: 1.5rem; box-shadow: 0 0 10px var(--springGreen);"></i>
+                <h3 style="font-size: 2.5rem; color: #fff; margin-bottom: 1rem;">Back-End & DB</h3>
+                <p style="font-size: 1.6rem; color: #eee; line-height: 1.8;">PHP (Core), MySQL, Oracle (SQL/PLSQL),
+                    Session Handling.</p>
+            </div>
+
+            <div class="box skills-box"
+                style="background: #222; border-radius: 1rem; padding: 3rem; text-align: center; border: .2rem solid #222; transition: .2s linear;">
+                <i class="fas fa-laptop-code"
+                    style="height: 6rem; width: 6rem; line-height: 6rem; font-size: 2.5rem; color: #fff; background: var(--springGreen); border-radius: 50%; margin-bottom: 1.5rem; box-shadow: 0 0 10px var(--springGreen);"></i>
+                <h3 style="font-size: 2.5rem; color: #fff; margin-bottom: 1rem;">Programming</h3>
+                <p style="font-size: 1.6rem; color: #eee; line-height: 1.8;">C, C++, Java (Core), ASP.NET, VB.NET,
+                    Problem Solving.</p>
+            </div>
+
+            <div class="box skills-box"
+                style="background: #222; border-radius: 1rem; padding: 3rem; text-align: center; border: .2rem solid #222; transition: .2s linear;">
+                <i class="fas fa-tools"
+                    style="height: 6rem; width: 6rem; line-height: 6rem; font-size: 2.5rem; color: #fff; background: var(--springGreen); border-radius: 50%; margin-bottom: 1.5rem; box-shadow: 0 0 10px var(--springGreen);"></i>
+                <h3 style="font-size: 2.5rem; color: #fff; margin-bottom: 1rem;">Tools & IDEs</h3>
+                <p style="font-size: 1.6rem; color: #eee; line-height: 1.8;">VS Code, Visual Studio, XAMPP, Git, Github,
+                    SublimeText.</p>
+            </div>
+
+        </div>
+    </section>
+    <!-- skills section ends -->
+
+    <!-- portfolio section starts  -->
+    <section class="portfolio" id="portfolio">
+        <h1 class="heading"> My <span>work</span> </h1>
+        <p style="text-align: center; color: #eee; font-size: 1.5rem; margin-bottom: 2rem;">Hover to view project
+            details!</p>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png" alt="Personal Portfolio Website">
+                <div class="layer">
+                    <h3>Personal Portfolio Website</h3>
+                    <a href="https://fajalkasmani.in/" target="_blank"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
-                <div class="work">
-                    <img src="./Assets/work-2.png" alt="work-1">
-                    <div class="layer">
-                        <h3>Quickhell - A Comprehensive Service Provider</h3>
-                        <p>The app content you to the telented people was adsked to me how thats can perform batterly
-                        </p>
-                        <a href="https://quickhell.42web.io/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png" alt="Quickhell - Service Provider">
+                <div class="layer">
+                    <h3>Quickhell - Service Provider</h3>
+                    <p>Comprehensive Service App</p>
+                    <a href="https://quickhell.42web.io/" target="_blank"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+    <!-- portfolio section ends -->
 
-    <!-- contact -->
-    <!-- contact -->
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-envelope"></i>fajalmemon393@gmail.com</p>
-                    <p><i class="fa-solid fa-square-phone"></i>+91 9724096042</p>
-                    <div class="social-icons">
-                        <a href="https://in.linkedin.com/in/fajal-kasmani-79b9642b0" target="_blank"><i
-                                class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/FajalKasmani" ><i class="fa-brands fa-github"></i></a>
-                    </div>
-                    <a href="./Assets/my-cv.pdf" target="_blank" class="btn-resume see-more-btn">Resume</a>
+    <!-- contact section starts  -->
+    <section class="contact" id="contact">
+        <h1 class="heading"> <span>Contact</span> me </h1>
+        <div class="row fajal-contact-row">
+            <div class="contact-left">
+                <p><i class="fa-solid fa-envelope"></i> fajalmemon393@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> +91 9724096042</p>
+                <div class="social-icons">
+                    <a href="https://in.linkedin.com/in/fajal-kasmani-79b9642b0" target="_blank"><i
+                            class="fa-brands fa-linkedin hover-glow"></i></a>
+                    <a href="https://github.com/FajalKasmani" target="_blank"><i
+                            class="fa-brands fa-github hover-glow"></i></a>
                 </div>
+                <a href="images/my-cv.pdf" target="_blank" class="btn"><i class="fas fa-download"></i> Download
+                    Resume</a>
+            </div>
 
-                <div class="contact-right">
-                    <!-- ✅ FormSubmit integrated form with honeypot -->
-                    <form action="https://formsubmit.co/fajalmemon393@gmail.com" method="POST">
-                        <!-- Honeypot field for spam protection -->
-                        <input type="text" name="_honey" style="display:none">
-
-                        <!-- Actual visible fields -->
-                        <input type="text" name="name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
-
-                        <!-- Optional hidden settings -->
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_subject" value="New Contact Form Submission!">
-                        <input type="hidden" name="_template" value="table">
-
-                        <button type="submit" class="btn2 btn-resume see-more-btn">Submit</button>
-                    </form>
-                    <!-- <span id="msg">Your Form Request Will Be Submited..</span> -->
-                </div>
+            <div class="contact-right">
+                <!-- FormSubmit Integration -->
+                <form action="https://formsubmit.co/fajalmemon393@gmail.com" method="POST">
+                    <input type="text" name="_honey" style="display:none">
+                    <input type="text" name="name" placeholder="Your Name" class="box" required>
+                    <input type="email" name="email" placeholder="Your Email" class="box" required>
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_subject" value="New Contact Form Submission from Combined Portfolio!">
+                    <input type="hidden" name="_template" value="table">
+                    <textarea name="message" rows="6" placeholder="Your Message" class="box message"
+                        required></textarea>
+                    <button type="submit" class="btn"> send <i class="fas fa-paper-plane"></i> </button>
+                </form>
             </div>
         </div>
-        <div class="copyright">
-            <p> Copyright © Fajal Kasmani <i>&hearts;</i> All rights reserved</p>
-        </div>
-    </div>
+    </section>
+    <!-- contact section ends -->
 
-    <script src="App.js"></script>
+    <!-- scroll top button  -->
+    <a href="#home" class="top">
+        <i class="fas fa-arrow-up"
+            style="font-size: 2rem; color: #fff; background: var(--springGreen); border-radius: 50%; padding: 10px 15px;"></i>
+    </a>
+
+    <!-- jquery cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- typed.js cdn link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+
+    <!-- vanilla-tilt.js cdn link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+
+    <!-- scrollreveal cdn link -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+
 </body>
 
 </html>

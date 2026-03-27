@@ -1,0 +1,980 @@
+/* Start Global CSS For Whole Page*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
+
+:root {
+    --springGreen: #ff004f;
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    /* text-transform: capitalize removed globally */
+    transition: all .2s linear;
+}
+
+*::selection {
+    background: var(--springGreen);
+    color: #333;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+    width: 1.4rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: #222;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--springGreen);
+}
+
+body {
+    background: #111;
+    overflow-x: hidden;
+    padding-left: 35rem;
+}
+
+section {
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+/* End Global CSS For Whole Page*/
+
+/* Start Button CSS*/
+.btn {
+    padding: .7rem 3rem;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 2rem;
+    border-radius: 5rem;
+}
+
+.btn i {
+    padding: 0 .5rem;
+    font-size: 1.8rem;
+}
+
+.btn:hover {
+    background: var(--springGreen);
+    color: #1a1a1a
+}
+
+/* End Button CSS*/
+
+/* Start header Navbar Section CSS*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 100%;
+    width: 35rem;
+    background: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+
+header .user img {
+    height: 17rem;
+    width: 17rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: .5rem solid var(--springGreen);
+    margin-top: 15px;
+}
+
+header .user .name {
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+.nickname {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+header .user .post {
+    font-size: 2rem;
+    color: #eee;
+}
+
+header .navbar {
+    width: 100%;
+}
+
+header .navbar ul {
+    list-style: none;
+    padding: 1rem 3rem;
+}
+
+
+header .navbar ul li a {
+    display: block;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    background: #333;
+    color: #fff;
+    font-size: 2rem;
+    border-radius: 5rem;
+}
+
+header .navbar ul li a:hover {
+    background: var(--springGreen);
+    color: #1a1a1a;
+}
+
+#menu {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding: 1rem 1.5rem;
+    z-index: 1000;
+    display: none;
+}
+
+/* End header Navbar CSS*/
+
+/* Home Section CSS Start*/
+.home {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding: 0 15rem;
+}
+
+.home h3 {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.home h1 {
+    font-size: 5rem;
+    color: #fff;
+}
+
+.home h1 span {
+    color: var(--springGreen);
+}
+
+.home p {
+    font-size: 2rem;
+    color: #eee;
+    padding: 1rem 0;
+}
+
+.heading {
+    text-align: center;
+    margin: 0 6rem;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+    border-bottom: .1rem solid #fff4;
+    color: #fff;
+}
+
+.heading span {
+    color: var(--springGreen);
+}
+
+/* End Home Section CSS*/
+
+/*Start About Section CSS*/
+.about .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+
+.about .row .info {
+    flex: 1 1 48rem;
+    padding: 2rem 1rem;
+    padding-left: 6rem;
+}
+
+.about .row .info h3 {
+    font-size: 2rem;
+    color: var(--springGreen);
+    padding: 1rem 0;
+    font-weight: normal;
+}
+
+.about .row .info h3 span {
+    color: #eee;
+    padding: 0 .5rem;
+}
+
+.about .row .counter {
+    flex: 1 1 48rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about .row .counter .box {
+    width: 20rem;
+    background: #222;
+    text-align: center;
+    padding: 2rem;
+    margin: 2rem;
+}
+
+.about .row .counter .box span {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--springGreen);
+}
+
+.about .row .counter .box h3 {
+    font-size: 2rem;
+    color: #fff;
+}
+
+/* End About Section CSS */
+
+/* Start Education Section CSS */
+.education .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    padding-left: 3rem;
+}
+
+.education .box-container .box {
+    width: 27rem;
+    margin: 4rem 1rem;
+    padding-left: 4rem;
+    border-left: .2rem solid #fff;
+    position: relative;
+}
+
+.education .box-container .box span {
+    font-size: 1.3rem;
+    background: #222;
+    color: #fff;
+    border-radius: 5rem;
+    padding: .5rem 2.5rem;
+}
+
+.education .box-container .box h3 {
+    font-size: 2rem;
+    color: #fff;
+    padding-top: 1.5rem;
+}
+
+.education .box-container .box p {
+    font-size: 1.4rem;
+    color: #eee;
+    padding: 1rem 0;
+}
+
+.education .box-container .box i {
+    position: absolute;
+    top: -1.5rem;
+    left: -2.5rem;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    background: var(--springGreen);
+}
+
+/* End Education Section CSS */
+
+/* Start Portfolio Section CSS */
+.portfolio .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+
+.portfolio .box-container .box {
+    height: 20rem;
+    width: 26rem;
+    border-radius: 1rem;
+    margin: 2rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.portfolio .box-container .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.portfolio .box-container .box:hover img {
+    transform: scale(1.2);
+}
+
+/* End Portfolio Section CSS */
+
+/* Start Contact Section CSS */
+.contact .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact .row .content {
+    flex: 1 1 30rem;
+    padding: 4rem;
+    padding-bottom: 0;
+}
+
+.contact .row form {
+    flex: 1 1 45rem;
+    padding: 2rem;
+    margin: 2rem;
+    margin-bottom: 4rem;
+}
+
+.contact .row form .box {
+    padding: 1.5rem;
+    margin: 1rem 0;
+    background: #3333;
+    color: #fff;
+    text-transform: none;
+    font-size: 1.7rem;
+    width: 100%;
+}
+
+.contact .row form .box::placeholder {
+    /* text-transform: capitalize removed globally */
+}
+
+.contact .row form .message {
+    height: 15rem;
+    resize: none;
+}
+
+.contact .row .content .title {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+.contact .row .content .info h3 {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: #eee;
+    padding: 1rem 0;
+    font-weight: normal;
+}
+
+.contact .row .content .info h3.lower {
+    text-transform: lowercase;
+}
+
+.contact .row .content .info h3 i {
+    padding-right: 1rem;
+    color: var(--springGreen);
+}
+
+/* End Contact Section CSS */
+
+/* Scroll For Top CSS */
+.top {
+    position: fixed;
+    bottom: 7.5rem;
+    right: 2rem;
+    z-index: 100;
+    display: none;
+}
+
+
+
+/* Responsive media queries  */
+
+@media (max-width:1200px) {
+
+    html {
+        font-size: 55%;
+    }
+
+    .home {
+        padding: 1rem 4rem;
+    }
+
+}
+
+@media (max-width:991px) {
+
+    header {
+        left: -120%;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    header.toggle {
+        left: 0%;
+    }
+
+    body {
+        padding: 0;
+    }
+
+}
+
+@media (max-width:768px) {
+
+    html {
+        font-size: 50%;
+    }
+
+}
+
+@media (max-width:400px) {
+
+    header {
+        width: 100vw;
+    }
+
+    .heading {
+        margin: 0 3rem;
+    }
+
+    .about .row .counter .box {
+        width: 100%;
+    }
+
+    .education .box-container .box {
+        width: 100%;
+    }
+
+    .portfolio .box-container .box {
+        width: 100%;
+    }
+
+    .contact .row form {
+        margin: 3rem 0;
+    }
+
+}
+
+/* Premium Portfolio Overrides */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span,
+button,
+input,
+textarea {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #0f172a !important;
+    color: #f8fafc;
+}
+
+header {
+    background: #1e293b !important;
+    box-shadow: 2px 0 15px rgba(0, 0, 0, 0.5);
+}
+
+header .user img {
+    box-shadow: 0 0 20px rgba(255, 0, 79, 0.5);
+}
+
+.btn {
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    box-shadow: 0 0 15px var(--springGreen);
+    transform: translateY(-3px);
+    border: 1px solid var(--springGreen);
+}
+
+.box.tilt {
+    background: rgba(30, 41, 59, 0.7) !important;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.box.tilt:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 15px rgba(255, 0, 79, 0.3);
+    border: 1px solid var(--springGreen);
+}
+
+.hover-glow {
+    transition: all 0.3s ease;
+}
+
+.hover-glow:hover {
+    text-shadow: 0 0 10px var(--springGreen);
+    color: var(--springGreen) !important;
+    transform: scale(1.2);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #ff004f, #ff7b00);
+    border-radius: 5px;
+}
+
+/* Advanced Mobile Layout Overrides */
+.mobile-top-bar {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 7rem;
+    background: #1e293b;
+    z-index: 999;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.mobile-top-bar .mobile-user {
+    display: flex;
+    align-items: center;
+}
+
+.mobile-top-bar .mobile-user img {
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 50%;
+    border: .2rem solid var(--springGreen);
+    margin-right: 1.5rem;
+    object-fit: cover;
+}
+
+.mobile-top-bar .mobile-user .name {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+#menu {
+    position: static;
+    cursor: pointer;
+    font-size: 2.5rem;
+    color: var(--springGreen);
+    display: none;
+    background: transparent;
+    padding: 0;
+}
+
+@media (max-width:991px) {
+    body {
+        padding: 7rem 0 0 0 !important;
+    }
+
+    header {
+        left: -120%;
+        z-index: 1000;
+        box-shadow: none !important;
+    }
+
+    header.toggle {
+        left: 0%;
+        box-shadow: 5px 0 15px rgba(0, 0, 0, 0.5) !important;
+    }
+
+    .mobile-top-bar {
+        display: flex;
+    }
+
+    #menu {
+        display: block;
+    }
+}
+
+@media (max-width:480px) {
+    html {
+        font-size: 50%;
+    }
+
+    .heading {
+        font-size: 3.5rem;
+        margin: 0 1.5rem;
+    }
+
+    .home h1 {
+        font-size: 3.5rem;
+    }
+
+    .home p.typing-container {
+        font-size: 1.8rem !important;
+    }
+
+    .about .row .info {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .contact .row form {
+        margin: 1rem 0;
+        padding: 1rem;
+    }
+
+    .services .box {
+        padding: 2rem !important;
+    }
+
+    header {
+        width: 80% !important;
+    }
+}
+
+/* Portfolio Hover Layers Overrides */
+.portfolio .box {
+    position: relative;
+    overflow: hidden;
+    padding: 0 !important;
+    border: 2px solid transparent !important;
+}
+
+.portfolio .box img {
+    display: block;
+    width: 100%;
+    height: auto !important;
+    transition: transform 0.5s;
+    border-radius: 0 !important;
+}
+
+.portfolio .box .layer {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), var(--springGreen));
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    transition: height 0.4s ease;
+    backdrop-filter: blur(5px);
+}
+
+.portfolio .box:hover .layer {
+    height: 100%;
+}
+
+.portfolio .box .layer h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.portfolio .box .layer p {
+    font-size: 1.4rem;
+    color: #eee;
+    margin-bottom: 20px;
+}
+
+.portfolio .box .layer a {
+    color: var(--springGreen);
+    font-size: 1.8rem;
+    background: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.portfolio .box .layer a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #fff;
+}
+
+/* Fajal Portfolio 1 Overrides for Theme 2 */
+.about-fajal-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2rem 5% !important;
+    align-items: flex-start !important;
+}
+
+.about-col1 {
+    flex-basis: 35%;
+    margin-bottom: 30px;
+}
+
+.about-col1 img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    border: .2rem solid var(--springGreen);
+    box-shadow: 0 0 20px rgba(255, 0, 79, 0.3);
+}
+
+.about-col2 {
+    flex-basis: 60%;
+}
+
+.about-bio {
+    font-size: 1.6rem;
+    color: #eee;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 30px;
+}
+
+.tab-links {
+    margin-right: 40px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    color: #fff;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: var(--springGreen);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 15px 0;
+    font-size: 1.6rem;
+    color: #ccc;
+}
+
+.tab-contents ul li span {
+    color: var(--springGreen);
+    font-size: 1.8rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.fajal-contact-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 5%;
+    align-items: flex-start !important;
+}
+
+.contact-left {
+    flex-basis: 35%;
+    margin-bottom: 30px;
+}
+
+.contact-right {
+    flex-basis: 60%;
+}
+
+.contact-left p {
+    margin-top: 30px;
+    font-size: 1.8rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.contact-left p i {
+    color: var(--springGreen);
+    margin-right: 15px;
+    font-size: 2.5rem;
+}
+
+.social-icons {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 3.5rem;
+    margin-right: 20px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+    color: var(--springGreen);
+    transform: translateY(-5px);
+}
+
+@media (max-width:991px) {
+
+    .about-col1,
+    .about-col2,
+    .contact-left,
+    .contact-right {
+        flex-basis: 100%;
+    }
+
+    .tab-links {
+        margin-right: 20px;
+        font-size: 1.6rem;
+    }
+}
+
+/* Fajal Portfolio 1 Work/Portfolio Overrides */
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    padding: 0 5%;
+}
+
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid transparent;
+    transition: border 0.5s;
+    cursor: pointer;
+}
+
+.work img {
+    width: 100%;
+    border: 2px solid wheat !important;
+    border-radius: 10px !important;
+    display: block;
+    transition: none !important;
+    object-fit: cover;
+}
+
+.work:hover {
+    border: 2px solid var(--springGreen);
+}
+
+.work:hover img {
+    transform: none !important;
+}
+
+.work .layer {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), var(--springGreen));
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+    overflow: hidden;
+}
+
+.work:hover .layer {
+    height: 100%;
+}
+
+.work .layer h3 {
+    font-weight: 500;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.work .layer p {
+    font-size: 1.4rem;
+    color: #eee;
+    margin-bottom: 20px;
+}
+
+.work .layer a {
+    margin-top: 20px;
+    color: var(--springGreen);
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 50px;
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.work .layer a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #fff;
+}
+
+/* Skills Box Hover Effect */
+.skills-box:hover {
+    border: .2rem solid var(--springGreen) !important;
+    transform: translateY(-10px) !important;
+}
