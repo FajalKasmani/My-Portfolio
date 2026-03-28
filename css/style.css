@@ -988,3 +988,28 @@ header .user img {
     border: .2rem solid var(--springGreen) !important;
     transform: translateY(-10px) !important;
 }
+
+/* Copyright Footer */
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 2.5rem 0;
+    background-color: #1e293b;
+    margin-top: 2rem;
+}
+
+.copyright p {
+    font-size: 1.6rem;
+    color: #eee;
+}
+
+.copyright i {
+    color: var(--springGreen);
+    margin: 0 .5rem;
+}
+
+@media (max-width: 600px) {
+    .copyright p {
+        font-size: 1.4rem;
+    }
+}

@@ -31,7 +31,7 @@ $(document).ready(function () {
 
   // Typed.js setup
   var typed = new Typed(".typing", {
-    strings: ["Full-Stack Web Developer", "Freelance", "Programming Enthusiast"],
+    strings: ["Full-Stack Developer", "Freelance", "Tech Enthusiast"],
     typeSpeed: 80,
     backSpeed: 40,
     loop: true
@@ -66,31 +66,31 @@ $(document).ready(function () {
 });
 
 // Context Menu (Right-Click) Protection
-document.addEventListener('contextmenu', function(e) {
+document.addEventListener('contextmenu', function (e) {
   e.preventDefault();
 });
 
 // Developer Tools Key Shortcut Protection
-document.addEventListener('keydown', function(e) {
+document.addEventListener('keydown', function (e) {
   // Disable F12
-  if(e.keyCode == 123) {
-      e.preventDefault();
+  if (e.keyCode == 123) {
+    e.preventDefault();
   }
   // Disable Ctrl+Shift+I (Chrome DevTools)
-  if(e.ctrlKey && e.shiftKey && e.keyCode == 73) {
-      e.preventDefault();
+  if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+    e.preventDefault();
   }
   // Disable Ctrl+Shift+J (Console)
-  if(e.ctrlKey && e.shiftKey && e.keyCode == 74) {
-      e.preventDefault();
+  if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+    e.preventDefault();
   }
   // Disable Ctrl+Shift+C (Inspect Element)
-  if(e.ctrlKey && e.shiftKey && e.keyCode == 67) {
-      e.preventDefault();
+  if (e.ctrlKey && e.shiftKey && e.keyCode == 67) {
+    e.preventDefault();
   }
   // Disable Ctrl+U (View Source)
-  if(e.ctrlKey && e.keyCode == 85) {
-      e.preventDefault();
+  if (e.ctrlKey && e.keyCode == 85) {
+    e.preventDefault();
   }
 });
 
